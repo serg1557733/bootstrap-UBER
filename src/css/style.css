@@ -4,13 +4,22 @@
 nav {
     height: 50px;
     background: #212121;
+    position: fixed; /* зафиксировать липкое меню */
+    width: 100%;/* растянуть липкое меню на всю ширину родителя */
 }
+header {
+    position: relative;
+} 
+
 .menu {
+    
     padding: 13px 79px;
     margin: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    
+    
 }
 .menu .menu_link {
     color: #FFFFFF;
@@ -22,10 +31,14 @@ nav {
 .menu .menu_item {
     border-right: 2px dotted black;
     padding-right: 28px;
+    
 }
 .subheader {
     height: 87px;
     background-color:rgba(0,0,0, .6);
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;/* смещение от header для липкого меню  */
 }
 .subheader .subheader_logo {
     display: block;
@@ -77,6 +90,7 @@ nav {
     min-height: 799px;
     background: url(../img/bg/uber_bg.png) center center/cover no-repeat;
     padding: 140px 0 165px 0;
+    
 }
 .promo .promo_header {    
     font-weight: 700;
@@ -122,3 +136,45 @@ nav {
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
     }
+
+.reason {
+    padding: 18px 0 54px 0;
+}
+.reason .reason_text {
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    align-items:center;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    line-height: 28px;
+    margin: 0 auto;   
+}
+.reason .reason_h2 {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 38px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+.reason_item{
+    
+
+}
+.reason_img {
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.reason_img .reason_icon{
+
+}
