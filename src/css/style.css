@@ -100,7 +100,7 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     line-height: 36px;
-    margin: 0;
+    margin: 45px;
 }
 .promo .promo_subheader {   
     margin: 0;
@@ -162,19 +162,50 @@ header {
     text-transform: uppercase;
     color: #222222;
 }
-.reason_item{
-    
-
+.reason_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px; 
+    min-height: 150px; 
+    padding-bottom: 30px;
 }
-.reason_img {
+.reason_item .reason_round {
     width: 116px;
     height: 116px;
     background: #1EACC7;
     border-radius: 100%;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    margin-right: 26px; 
+     
 }
-.reason_img .reason_icon{
+.reason_round .reason_icon{
+    width: 85px;
+    height: 66px;
+}
+.reason_item .col_text {
+    width: 371px;
+    height: 150px;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: 300;
+}
+.col_text span{
+    font-weight: 400;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: #1EACC7;
+    line-height: 21px;
+}
+.reason_round .reason_icon1{
+    width: 54px;
+    height: 78px;
+}
 
-}
+.reason_round .reason_icon2{
+    width: 73px;
+    height: 68px;
+}    
