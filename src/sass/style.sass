@@ -1,6 +1,10 @@
 $main_color: #1EACC7
 $second_color: #FFFFFF
 
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $main_color
 *
   font-family: 'Open Sans', sans-serif
   
@@ -82,7 +86,7 @@ header
   color: $second_color
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
   margin-top: 19px
-
+  +btn_hover
 .promo
   min-height: 799px
   background: url(../img/bg/uber_bg.png) center (center / cover) no-repeat
@@ -130,7 +134,7 @@ header
     text-transform: uppercase
     color: $second_color
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-
+    +btn_hover
 .reason
   padding: 18px 0 54px 0
 
@@ -254,7 +258,29 @@ header
             bottom: 38px
             left: 50%
             transform: translateX(-50%)
-            cursor: pointer   
+            cursor: pointer
+            &:before
+              content: ""
+              display: block
+              width: 14px
+              height: 2px
+              background-color: $main_color
+              transition: 0.5s all
+            &:after
+              content: ""
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              display: block
+              height: 14px
+              width: 2px
+              background-color: $main_color
+              transition: 0.5s all
+            &:hover
+              &:before,&:after
+               background-color: $second_color  
+              
+                
 .choice
   position: relative
   &_bg_dark
@@ -293,4 +319,49 @@ header
     top: 267px
     bottom: 180px
     left: 50%
-    transform: translateX(-50%) 
+    transform: translateX(-50%)
+.require
+  padding: 68px 0 85px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0
+  &_title 
+    font-weight: 400
+    font-size: 22px
+    color: #1CA8C3
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #222222
+      margin-bottom: 10px
+      position: relative
+      &:before
+        content: ""
+        display: block
+        position: absolute
+        left: -31px
+        top: 50%
+        transform: translateY(-50%)
+        width: 25px
+        height: 24px
+        background: url('../icons/check_blue.svg') center (center/cover) no-repeat
+  &_desc
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      color: #1CA8C3
+  .red
+    .require_title
+        color: #ff5656
+    .require_list
+        li
+          &:before
+              background: url('../icons/check_red.png') center (center/cover) no-repeat
+
+
