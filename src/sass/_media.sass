@@ -86,7 +86,7 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        top: 0
+        top: 96px
         left: -100%
         width: 50%
         height: 100vh
@@ -108,9 +108,74 @@
         top: 50%
         transform: translateY(-50%)
         width: 26px
+        height: 12px
         span
             display: block
             height: 2px
             width: 100%
             background-color: #fff
             margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .choice
+        &_img
+            width: 80%
+            height: 370px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-weight: 400
+            font-size: 20px
+            align-items: center
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+            display: block
+            margin-top: 5px
+        &_btn
+            width: 200px
+            height: 40px
+            font-size: 15px
+            margin: 0 auto
+            display: block
+            margin-top: 8px
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+    .promo    
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .subheder_h2 
+        font-size: 24px
+    .footer
+        &_block 
+            flex-direction: column
+            align-items: center
+        &_social
+            order: 2
+        &_apps
+            order: 3
+        &_menu
+            margin-top: 0
+        &_divider
+            width: 180px
+        &_wrapper
+            line-height: 8px
+            margin-bottom: 5px
+    .menu_link
+        font-size: 10px
