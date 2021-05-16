@@ -80,7 +80,8 @@ header
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
     margin-top: 19px
     +btn_hover
-
+.cars
+  display: none
 .promo
   min-height: 799px
   background: url(../img/bg/uber_bg.png) center (center / cover) no-repeat
@@ -153,15 +154,15 @@ header
   text-transform: uppercase
   color: #222222
 
-.reason_item
-  display: flex
-  justify-content: center
-  align-items: center
-  margin-top: 16px
-  min-height: 150px
-  padding-bottom: 30px
-
-  .reason_round
+.reason
+  &_item
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 16px
+    min-height: 150px
+    padding-bottom: 30px
+  &_round
     width: 116px
     height: 116px
     background: $main_color
